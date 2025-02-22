@@ -11,6 +11,7 @@
 
 ## 🚀 性能
 
+<br>
 <p align="center">
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2F">
     <img width="710" alt="Retypeset Lighthouse Score" src=Retypeset-lighthouse-score.svg>
@@ -40,7 +41,7 @@
 
 3. 点击 `Deploy` 即为部署成功
 
-参考 [Astro 部署指南](https://docs.astro.build/zh-cn/guides/deploy/) 可将博客部署至其它平台
+参考 [Astro 官方指南](https://docs.astro.build/zh-cn/guides/deploy/) 可选择部署至其它平台
 
 ## 🔄  更新
 
@@ -52,7 +53,7 @@
 
 正在施工...
 
-- [配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
+- [主题配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
 
 ## ❤️ 感谢
 
