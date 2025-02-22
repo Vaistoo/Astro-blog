@@ -5,4 +5,4 @@ tags: ["Astro", "Blog Theme"]
 lang: en
 ---
 
-Retypeset, an Astro-powered blog theme with the Chinese name "Recomposition", draws initial inspiration from typographic artistry. While preserving the quintessential charm of movable-type printing, it revolutionizes all page layouts with meticulous typographic design. This theme crafts a minimalist modern aesthetic that simultaneously resonates with the humanistic elegance inherent in traditional printing craftsmanship.
+A blog theme based on [Astro](https://astro.build/) framework, initially inspired by [Typography](https://astro-theme-typography.vercel.app/). This theme builds upon its original style by establishing unified color schemes, layouts, font standards while recomposing all pages aiming at recreating reading experiences from movable type printing era without losing modern designs elegance & simplicity; every detail matters here where elegance is revealed within inches!

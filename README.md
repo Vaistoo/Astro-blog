@@ -7,7 +7,7 @@
 ## 🔎 预览
 
 - [Retypeset](https://retypeset.radishzz.cc/)
-- [移动端设计方案](https://mastergo.com/file/151079538766773?fileOpenFrom=home&page_id=M&source=link_share&shareId=151079538766773)
+- [移动端设计稿](https://mastergo.com/file/151079538766773?fileOpenFrom=home&page_id=M&source=link_share&shareId=151079538766773)
 
 ## 🚀 性能
 
@@ -31,24 +31,26 @@
 
 ## 📦 部署
 
-1.点击 [`Fork`](https://github.com/radishzzz/astro-theme-retypeset/fork) 克隆仓库
+1. 点击 [`Fork`](https://github.com/radishzzz/astro-theme-retypeset/fork) 克隆仓库
 
-2.点击 `Deploy to Netlify` 或 `Deploy (with Vercel)`，并选择仓库
+2. 点击 `Deploy to Netlify` 或 `Deploy (with Vercel)`，并选择仓库
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
+&emsp;[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-3.点击 `Deploy` 即为部署成功
+3. 点击 `Deploy` 即为部署成功
 
 参考 [Astro 部署指南](https://docs.astro.build/zh-cn/guides/deploy/) 可将博客部署至其它平台
 
 ## 🔄  更新
 
-按照 [GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) 在克隆仓库中执行 `Sync fork`，不要点击 `Discard Changes`（放弃更改）
+1. 按照 [GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) 在克隆仓库中执行 `Sync fork`
+
+2. 不要点击 `Discard Changes`（放弃更改）
 
 ## 📄 文档
 
-正在施工中...
+正在施工...
 
 - [配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
 
@@ -58,7 +60,7 @@
 
 - [Typography](https://astro-theme-typography.vercel.app/)
 - [Fuwriu](https://github.com/saicaca/fuwari)
-- [Astro Paper](https://github.com/satnaing/astro-paper)
+- [AstroPaper](https://github.com/satnaing/astro-paper)
 - [Redefine](https://github.com/EvanNotFound/hexo-theme-redefine)
 
 ## ⭐ Star History
