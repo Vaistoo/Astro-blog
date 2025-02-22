@@ -11,7 +11,7 @@
 ## 🚀 性能
 <p align="center">
   <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2F">
-    <img width="710" alt="Retypeset Lighthouse Score" src=“./Retypeset-lighthouse-score.svg">
+    <img width="710" alt="Retypeset Lighthouse Score" src=“Retypeset-lighthouse-score.svg">
   <a>
 </p>
 
@@ -26,25 +26,10 @@
 - 性能： 最小化 CSS 与 JS，支持资源预加载、图片懒加载
 - 功能：支持切换字体样式、设置评论、站点验证、自定义页脚等
 
-<!-- ## 🎯 TODO
-- 英文 readme
-- waline 评论
-- 目录
-- 搜索
-- 自动生成 OG
-- GSAP
-- 主题说明文档
-- 优化 heti css
-- 自定义文章 slug
-- 首页同步滚动
-- img to figure
-- 样式 bug 测试
-- 内存异常增长测试 -->
-
 ## 📦 部署
 1.点击 [`Fork`](https://github.com/radishzzz/astro-theme-retypeset/fork) 克隆仓库
-2.点击 `Deploy to Netlify` 或 `Deploy (with Vercel)`，并选择仓库
 
+2.点击 `Deploy to Netlify` 或 `Deploy (with Vercel)`，并选择仓库
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
 3.点击 `Deploy` 即为部署成功
@@ -53,10 +38,12 @@
 
 ## 🔄  更新
 按照 [GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) 在克隆仓库中执行 `Sync fork`
+
 注意: 不要点击 `Discard Changes（放弃更改）`
 
 ## 📄 文档
 [配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
+
 TODO
 
 ## ❤️ 感谢
