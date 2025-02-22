@@ -1,57 +1,77 @@
-# 重新编排
-Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排，最初灵感来自 [Typography](https://astro-theme-typography.vercel.app/)。本主题以原主题风格为基础，通过建立统一的色彩、版式、字体规范，对所有页面都进行重新编排，力求还原活字印刷时代的阅读体验，同时不失现代设计的优雅与简约。处处皆为细节，方寸尽显优雅。
+# Retypeset
+一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排，最初灵感来自 [Typography](https://astro-theme-typography.vercel.app/)。本主题以原主题风格为基础，通过建立统一的色彩、版式、字体规范，并对所有页面都进行重新编排，来还原活字印刷时代的阅读体验，同时不失现代设计的优雅与简约。处处皆为细节，方寸尽显优雅。
 
 ## 🚧 进度
-当前开发进度约 50%，暂不建议使用本主题
+当前正在开发中，暂不建议使用主题
 
 ## 🔎 预览
-- [开发预览](https://retypeset.radishzz.cc/)
-- [移动端设计图](https://mastergo.com/file/151079538766773?fileOpenFrom=home&page_id=M&source=link_share&shareId=151079538766773)
-- [主题配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
+- [Retypeset](https://retypeset.radishzz.cc/)
+- [移动端设计方案](https://mastergo.com/file/151079538766773?fileOpenFrom=home&page_id=M&source=link_share&shareId=151079538766773)
 
 ## 🚀 性能
-[PageSpeed Insights](https://pagespeed.web.dev/analysis/https-retypeset-radishzz-cc/f3h9h891jn?form_factor=mobile)
+<p align="center">
+  <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2F">
+    <img width="710" alt="Retypeset Lighthouse Score" src=“./Retypeset-lighthouse-score.svg">
+  <a>
+</p>
 
 ## ✨ 特征：
-1. 工具：基于 Astro、Typescript 与 Unocss 开发
-2. 扩展：支持 RSS、Sitemap、MDX、LaTeX 等
-3. i18n ：支持简体中文、繁体中文、日语、英语、西班牙语、俄语
-4. 按键：支持多语言切换、亮暗主题切换、返回顶部/主页
-5. 字体：包含初夏明朝体 VF、Snell Roundhand SF、STIX Two Text VF，无商用/嵌入限制
-6. 排版：针对 CJK 字体，使用赫蹏进行排版样式增强
-7. 动画：支持 View Transitions 与 GSAP
-8. 性能： 最小化 CSS 与 JavaScript，支持资源预加载、图片懒加载
-9. 配置：支持切换黑体/宋体、设置评论、站点验证、自定义页脚等
+- 工具：基于 Astro、Typescript 与 Unocss 开发
+- 扩展：支持 RSS、Sitemap、MDX、LaTeX 等
+- i18n ：支持简体中文、繁体中文、日语、英语、西班牙语、俄语
+- 按键：支持多语言切换、亮暗主题切换、返回顶部/主页
+- 字体：包含初夏明朝体 VF、Snell Roundhand SF、STIX Two Text VF，无商用/嵌入限制
+- 排版：针对 CJK 字体，使用赫蹏进行排版样式增强
+- 动画：支持 View Transitions 与 GSAP
+- 性能： 最小化 CSS 与 JS，支持资源预加载、图片懒加载
+- 功能：支持切换字体样式、设置评论、站点验证、自定义页脚等
 
-## 🎯 TODO
-1. 英文 readme
-2. waline 评论
-3. 目录
-4. 搜索
-5. 自动生成 OG
-6. GSAP
-7. 主题说明文档
-8. 优化 heti css
-9. 自定义文章 slug
-10. 首页同步滚动
-11. img to figure
-12. 样式 bug 测试
-13. 内存异常增长测试
+<!-- ## 🎯 TODO
+- 英文 readme
+- waline 评论
+- 目录
+- 搜索
+- 自动生成 OG
+- GSAP
+- 主题说明文档
+- 优化 heti css
+- 自定义文章 slug
+- 首页同步滚动
+- img to figure
+- 样式 bug 测试
+- 内存异常增长测试 -->
 
-## 📦 安装
-Fork and Deploy
+## 📦 部署
+1.点击 [`Fork`](https://github.com/radishzzz/astro-theme-retypeset/fork) 克隆仓库
+2.点击 `Deploy to Netlify` 或 `Deploy (with Vercel)`，并选择仓库
 
-## ⏫ 更新
-Sync Fork
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-## 📝 文档
+3.点击 `Deploy` 即为部署成功
+
+参考 [Astro 部署指南](https://docs.astro.build/zh-cn/guides/deploy/) 可将博客部署至其它平台
+
+## 🔄  更新
+按照 [GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) 在克隆仓库中执行 `Sync fork`
+注意: 不要点击 `Discard Changes（放弃更改）`
+
+## 📄 文档
+[配置介绍](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts)
 TODO
 
-## 💖 感谢
-优秀主题参考
+## ❤️ 感谢
+参考主题
 - [Typography](https://astro-theme-typography.vercel.app/)
 - [Fuwriu](https://github.com/saicaca/fuwari)
 - [Astro Paper](https://github.com/satnaing/astro-paper)
+- [Redefine](https://github.com/EvanNotFound/hexo-theme-redefine)
 
-## 🌟 Star History
-TODO
+## ⭐ Star History
+<p align="center">
+<a href="https://star-history.com/#radishzzz/astro-theme-retypeset&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date" />
+  </picture>
+</p>
