@@ -26,11 +26,11 @@ const postsByYear = await getPostsByYear()
       </section>
     )}
 
-    {[...postsByYear.entries()].map(([_year, posts]) => (
+    {[...postsByYear.entries()].map(([_year, posts], index) => (
       // Year Group
       <section class="mt-7.5">
         {/* Decorative Line */}
-        <div class="h-0.125 w-10 bg-secondary opacity-25"></div>
+        {index !== 0 && <div class="h-0.125 w-10 bg-secondary opacity-25"></div>}
         {/* Posts List */}
         <ul>
           {posts.map(post => (

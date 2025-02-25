@@ -49,6 +49,7 @@ const fontStyle = themeConfig.global.fontStyle === 'serif' ? 'font-serif' : 'fon
       {!isHome && isPost && <MobileHeader /> }
 
       <main class="col-start-1 row-start-1">
+        <div class="mb-4.375 h-0.125 w-10 bg-secondary opacity-25"></div>
         <slot />
       </main>
       <Footer class="mt-12 block lg:hidden" />
