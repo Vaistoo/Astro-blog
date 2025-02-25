@@ -1,0 +1,67 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { getAllTags, getPostsByTag } from '@/utils/content'
+
+export async function getStaticPaths() {
+  const tags = await getAllTags()
+  return tags.map(tag => ({
+    params: { tag },
+    props: { tag },
+  }))
+}
+
+const { tag: currentTag } = Astro.props
+const posts = await getPostsByTag(currentTag)
+const allTags = await getAllTags()
+---
+
+<Layout>
+    <div class="flex flex-wrap gap-4">
+      {allTags.map(tag => (
+        <a href={`/tags/${tag}/`}>
+          <button class:list={['border border-secondary rounded-full px-2.5 py-1 text-3.6 c-secondary font-system-serif hover:border-primary hover:c-primary', currentTag === tag ? 'font-bold border-1.5 border-primary c-primary' : '']}>
+            {tag}
+          </button>
+        </a>
+      ))}
+    </div>
+
+  <div>
+    <ul class="mt-8 flex flex-col gap-4">
+      {posts.map(post => (
+           <li>
+<a
+  class="hover:c-primary"
+  href={`/posts/${post.data.slug || post.slug}`}
+  transition:name={`post-${post.data.slug || post.slug}`}
+  data-disable-transition-on-theme
+>
+  {post.data.title}
+</a>
+
+<div
+  class="text-3.5 leading-6.875 font-time lg:(hidden)"
+  transition:name={`time-${post.data.slug || post.slug}`}
+  data-disable-transition-on-theme
+>
+  <time>
+    {post.data.published.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '-')}
+  </time>
+  <span class="ml-1.25">
+    {post.remarkPluginFrontmatter?.minutes} min
+  </span>
+</div>
+
+<div class="mb-5.625 hidden text-3.65 leading-6.875 font-time lg:(ml-2.5 inline)">
+  <time>
+    {post.data.published.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '-')}
+  </time>
+  <span class="ml-1.25">
+    {post.remarkPluginFrontmatter?.minutes} min
+  </span>
+</div>
+</li>
+      ))}
+    </ul>
+  </div>
+</Layout>
