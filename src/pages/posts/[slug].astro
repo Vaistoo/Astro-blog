@@ -48,4 +48,14 @@ const { Content, remarkPluginFrontmatter } = await post.render()
     </div>
     <Content />
   </article>
+  <div class="mb-4.375 mt-13 h-0.125 w-10 bg-secondary opacity-25"></div>
+  <div class="flex flex-wrap gap-4">
+    {post.data.tags.map(tag => (
+      <a href={`/tags/${tag}/`}>
+        <button class="border border-secondary rounded-full px-2.5 py-1 text-3.6 c-secondary font-serif hover:border-primary hover:c-primary">
+          {tag}
+        </button>
+      </a>
+    ))}
+  </div>
 </Layout>
