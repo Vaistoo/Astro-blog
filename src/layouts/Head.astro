@@ -4,6 +4,7 @@ import { ui } from '@/i18n/ui'
 import { getPageInfo } from '@/utils/page'
 import { ClientRouter } from 'astro:transitions'
 import katexCSS from 'katex/dist/katex.min.css?url'
+import { langMap } from '@/i18n/config'
 
 interface Props {
   postTitle?: string
@@ -142,6 +143,86 @@ window
     document.dispatchEvent(new Event('theme-changed'))
   })
 </script>
+
+<!-- Automatic language detection and redirection -->
+<script is:inline define:vars={{ 
+  allLocales, 
+  defaultLocale, 
+  currentLang, 
+  langMap: Object.entries(langMap),
+  currentPath: Astro.url.pathname 
+}}>
+{
+  // Perform detection only on the first visit
+  if (typeof window !== 'undefined' && !sessionStorage.getItem('lang-detected')) {
+    // Set a flag to prevent duplicate detection
+    sessionStorage.setItem('lang-detected', 'true');
+    
+    // Check if the URL already includes an explicit language code
+    const hasExplicitLangCode = allLocales.some(lang => currentPath.startsWith(`/${lang}/`));
+    
+    // Language detection and redirection only if the URL does not explicitly specify a language code
+    if (!hasExplicitLangCode) {
+      // 获取浏览器语言
+      const browserLang = navigator.language || navigator.languages[0] || defaultLocale;
+      
+      // Mapping Browser Languages to Site Supported Languages
+      function mapBrowserLanguage(browserLang) {
+        const normalizedLang = browserLang.toLowerCase();
+        
+        // Direct matching
+        if (allLocales.includes(normalizedLang)) {
+          return normalizedLang;
+        }
+        
+        // Match language prefix
+        const langPrefix = normalizedLang.split('-')[0];
+        if (allLocales.includes(langPrefix)) {
+          return langPrefix;
+        }
+        
+        // Matching by language mapping table
+        for (const [locale, mappings] of langMap) {
+          if (mappings.some(mapping => mapping.toLowerCase() === normalizedLang)) {
+            return locale;
+          }
+          if (mappings.some(mapping => mapping.toLowerCase().startsWith(langPrefix + '-'))) {
+            return locale;
+          }
+        }
+        
+        return defaultLocale;
+      }
+
+      // Detecting the right language
+      const detectedLang = mapBrowserLanguage(browserLang);
+      
+      // Redirect if the detected language is different from the current page language
+      if (detectedLang !== currentLang) {
+        // Build Redirect URL
+        let redirectUrl;
+        
+        // Special Handling Homepage
+        if (currentPath === '/') {
+          redirectUrl = detectedLang === defaultLocale ? '/' : `/${detectedLang}/`;
+        } 
+        // Handle language switching
+        else if (currentLang === defaultLocale) {
+          redirectUrl = `/${detectedLang}${currentPath}`;
+        }
+        else {
+          const pathWithoutLang = currentPath.replace(/^\/[^/]+\//, '/');
+          redirectUrl = detectedLang === defaultLocale ? pathWithoutLang : `/${detectedLang}${pathWithoutLang}`;
+        }
+        
+        // Perform redirection
+        window.location.href = redirectUrl;
+      }
+    }
+  }
+}
+</script>
+
 
 <!-- Google Analytics -->
 {googleAnalyticsID && (
