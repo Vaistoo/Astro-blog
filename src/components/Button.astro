@@ -2,6 +2,7 @@
 import { moreLocales, themeConfig } from '@/config'
 import { getNextGlobalLangPath, getNextSupportedLangPath } from '@/i18n/path'
 import { isPostPage, isTagPage } from '@/utils/page'
+import { getLangFromPath } from '@/i18n/lang'
 
 interface Props {
   supportedLangs: string[]
@@ -22,6 +23,9 @@ const useSupportedLangs = isPost || (isTag && supportedLangs.length > 0)
 const nextUrl = useSupportedLangs
   ? getNextSupportedLangPath(currentPath, supportedLangs) // Switch between supported languages
   : getNextGlobalLangPath(currentPath) // Switch between all languages
+
+// Get the code for the next language
+const nextLang = getLangFromPath(nextUrl)
 ---
 
 <div
@@ -35,8 +39,9 @@ const nextUrl = useSupportedLangs
   {showLanguageSwitcher && (
     <a
       href={nextUrl}
-      class="aspect-square w-4 c-secondary active:scale-90 hover:c-primary"
+      class="aspect-square w-4 c-secondary active:scale-90 hover:c-primary language-switcher"
       aria-label="Switch website language"
+      data-next-lang={nextLang}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +70,29 @@ const nextUrl = useSupportedLangs
     </svg>
   </button>
 </div>
+
+<!-- Language Switcher Script -->
+<script>
+  import { saveUserLanguagePreference } from '@/i18n/browser';
+  
+  function setupLanguageSwitcher() {
+    const languageSwitchers = document.querySelectorAll('.language-switcher');
+    languageSwitchers.forEach((switcher) => {
+      switcher.addEventListener('click', () => {
+        // Get the next language code
+        const nextLang = switcher.getAttribute('data-next-lang');
+        if (nextLang) {
+          // Save user's manually selected language preferences
+          saveUserLanguagePreference(nextLang);
+        }
+      })
+    })
+  }
+
+  // Initialize the event listener
+  setupLanguageSwitcher();
+  document.addEventListener('astro:after-swap', setupLanguageSwitcher);
+</script>
 
 <!-- Theme Toggle Script >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 <script is:inline define:vars={{ lightMode, darkMode }}>

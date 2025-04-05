@@ -99,6 +99,14 @@ const pageImage = postSlug
 <!-- Global View Transition -->
 <ClientRouter fallback="none" />
 
+<!-- Language Auto Redirect -->
+<script>
+  import { autoRedirectByLang } from '@/i18n/browser';
+  document.addEventListener('DOMContentLoaded', async () => {
+    await autoRedirectByLang(window.location.pathname, '${currentLang}');
+  });
+</script>
+
 <!-- Theme Toggle -->
 <script
   is:inline
