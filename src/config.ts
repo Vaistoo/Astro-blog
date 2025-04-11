@@ -166,7 +166,7 @@ export const themeConfig: ThemeConfig = {
     // comment server url
     commentURL: '',
     // image hosting url
-    imageHostURL: '',
+    imageHostURL: 'https://image-bed-qi7876.oss-cn-chengdu.aliyuncs.com',
     // custom google analytics js
     // for users who route analytics javascript to a customized domain
     // See https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
