@@ -136,10 +136,10 @@ export const themeConfig: ThemeConfig = {
   footer: {
     // social links
     links: [
-      {
-        name: 'RSS',
-        url: '/rss.xml', // rss.xml, atom.xml
-      },
+      // {
+      //   name: 'RSS',
+      //   url: '/rss.xml', // rss.xml, atom.xml
+      // },
       {
         name: 'GitHub',
         url: 'https://github.com/qi7876',
