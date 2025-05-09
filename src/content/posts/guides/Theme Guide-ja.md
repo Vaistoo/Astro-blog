@@ -73,11 +73,11 @@ color: {
 global: {
   // デフォルト言語
   // サイトのルートパス '/' の言語
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: 'zh' // zh, zh-tw, ja, en, es, ru, pt
   // その他の言語
   // '/ja/' '/en/' などの多言語パスを生成
   // デフォルト言語を重複して入力しないでください、空の配列 [] も可能です
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru', 'pt'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
   // フォントスタイル
   fontStyle: 'sans' // sans, serif
   // 記事の日付フォーマット

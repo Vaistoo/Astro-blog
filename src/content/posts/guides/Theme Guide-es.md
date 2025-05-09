@@ -73,11 +73,11 @@ color: {
 global: {
   // idioma predeterminado
   // idioma de la ruta raíz del sitio '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: 'zh' // zh, zh-tw, ja, en, es, ru, pt
   // más idiomas
   // genera rutas multilingües como '/es/' '/ru/'
   // no incluir el código de idioma anterior nuevamente, puede ser un array vacío []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru', 'pt'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
   // estilo de fuente
   fontStyle: 'sans' // sans, serif
   // formato de fecha para publicaciones

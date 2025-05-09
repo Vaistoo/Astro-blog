@@ -73,11 +73,11 @@ color: {
 global: {
   // язык по умолчанию
   // язык корневого пути сайта '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: 'zh' // zh, zh-tw, ja, en, es, ru, pt
   // дополнительные языки
   // создает многоязычные пути, такие как '/es/' '/ru/'
   // не указывайте код языка, указанный выше, можно оставить пустым массивом []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru', 'pt'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
   // стиль шрифта
   fontStyle: 'sans' // sans, serif
   // формат даты для постов
