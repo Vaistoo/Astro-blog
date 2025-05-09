@@ -25,3 +25,5 @@ Este es un artículo universal multilingüe sin definir 'lang', visible por defe
 這是一篇未指定 lang 的多語言通用文章，預設顯示於所有語言路徑下。
 
 これは言語パラメータ（lang）未指定の汎用マルチリンガル記事です。全言語パスでデフォルト表示されます。
+
+Este é um artigo universal multilínguas sem definir 'lang', visível por padrão através de todas as rotas de linguagem.
