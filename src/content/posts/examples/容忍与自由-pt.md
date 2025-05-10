@@ -3,7 +3,7 @@ title: Tolerância e Liberdade
 published: 1959-03-16
 tags:
   - Hu Shih
-  - Modern Literature
+  - Literatura Moderna
 lang: pt
 abbrlink: tolerance-freedom
 ---
