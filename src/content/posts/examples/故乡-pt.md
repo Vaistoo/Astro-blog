@@ -8,7 +8,7 @@ lang: pt
 abbrlink: my-native-heath
 ---
 
-![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)
+![_Aqui a descrição da imagem](https://image.radishzz.cc/picsmaller/03.webp)
 
 Fazia um frio cortante quando parti, após uma ausência de mais de vinte anos, para uma visita à minha terra natal a mais de dois mil li de distância.
 
