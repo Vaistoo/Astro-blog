@@ -10,7 +10,7 @@ lang: ja
 abbrlink: theme-guide
 ---
 
-Retypesetは、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。本ガイドではテーマの設定方法と新しい記事の作成方法を紹介し、個人ブログを素早く構築できるよう支援します。
+Retypesetは、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。本ガイドではテーマの設定変更方法と新しい記事の作成方法を紹介し、個人ブログを素早く構築できるよう支援します。
 
 ## テーマ設定
 
@@ -81,8 +81,9 @@ global: {
   // フォントスタイル
   fontStyle: 'sans' // sans, serif
   // 記事の日付フォーマット
-  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateFormat: 'YYYY-MM-DD'
   // 数式表示のためのKaTeXを有効化
   katex: true // true, false
 }

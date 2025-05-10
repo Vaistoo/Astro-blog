@@ -10,7 +10,7 @@ lang: es
 abbrlink: theme-guide
 ---
 
-Retypeset es un tema de blog estático basado en el framework [Astro](https://astro.build/). Esta guía presenta la configuración del tema y cómo crear nuevos artículos, ayudándote a configurar rápidamente tu blog personal.
+Retypeset es un tema de blog estático basado en el framework [Astro](https://astro.build/). Esta guía presenta cómo modificar la configuración del tema y crear nuevos artículos, ayudándote a configurar rápidamente tu blog personal.
 
 ## Configuración del Tema
 
@@ -81,8 +81,9 @@ global: {
   // estilo de fuente
   fontStyle: 'sans' // sans, serif
   // formato de fecha para publicaciones
-  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025, 13 Mar 2025
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateFormat: 'YYYY-MM-DD'
   // habilitar KaTeX para renderizar fórmulas matemáticas
   katex: true // true, false
 }
@@ -226,7 +227,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
   cjk: number // Chino, Japonés, Coreano
   other: number // Otros idiomas
 }> = {
-  list: { // Lista de artículos en página principal
+  list: { // Lista de publicaciones en página principal
     cjk: 120, // Extrae automáticamente los primeros 120 caracteres
     other: 240, // Extrae automáticamente los primeros 240 caracteres
   },

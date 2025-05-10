@@ -102,7 +102,7 @@ Sí, ahora lo recordaba. De mis recuerdos de infancia, recordaba la imagen de la
 
 "No soy rico. Tengo que vender estas cosas para ... "
 
-¿Qué dices? Te han nombrado Daotai y, sin embargo, dices que no eres rico. Tienes tres concubinas y viajas en un carruaje enorme con ocho porteadores, ¡y me dices que no eres rico! ¡Heng , no puedes engañarme!
+¿Qué dices? Te han nombrado Daotai y, sin embargo, dices que no eres rico. Tienes tres concubinas y viajas en un carruaje enorme con ocho porteadores, ¡y me dices que no eres rico! ¡Heng, no puedes engañarme!
 
 Me di cuenta de que no tenía sentido discutir con ella y me quedé callado.
 
@@ -148,7 +148,7 @@ Por la tarde, escogió algunas cosas que podría usar: dos mesas largas, cuatro 
 
 Por la noche volvimos a charlar, sin ningún tema en particular. A la mañana siguiente se fue con Shui-sheng.
 
-Nueve días después, dejamos nuestro antiguo hogar. Yun-t'u llegó temprano por la mañana. No trajo a Shui-sheng, sino a una niña de cinco años para vigilar el barco. Estuvimos ocupados todo el día y tuvimos pocas oportunidades de charlar. Había muchos invitados: algunos habían venido a despedirnos, otros a buscar cosas, y otros tanto a despedirnos como a buscar cosas. Cuando finalmente zarpamos, al anochecer, la vieja casa estaba vacía de todo lo que pudiera ser útil.
+Nueve días después, dejamos nuestro antiguo hogar. Yun-t'u llegó temprano por la mañana. No trajo a Shui-sheng, sino a una niña de cinco años para vigilar el barco. Estuvimos ocupados todo el día y tuvimos pocas oportunidades de charlar. Había muchos invitados: algunos habían venido a despedirnos, otros a buscar cosas, y otros tantos a despedirnos como a buscar cosas. Cuando finalmente zarpamos, al anochecer, la vieja casa estaba vacía de todo lo que pudiera ser útil.
 
 Nuestro barco avanzaba lentamente, dejando atrás las colinas verdes que se oscurecían a ambas orillas. Hung-erh, que había estado observando el paisaje oscuro conmigo desde una ventana, me dijo de repente: «Tío, ¿cuándo volvemos?».
 

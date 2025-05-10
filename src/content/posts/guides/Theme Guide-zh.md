@@ -10,7 +10,7 @@ lang: zh
 abbrlink: theme-guide
 ---
 
-Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排。本文为 Retypeset 主题上手指南，主要介绍主题配置与如何创建新文章，来帮助你快速搭建个人博客。
+Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排。本文为 Retypeset 主题上手指南，主要介绍如何修改主题配置与创建新文章，来帮助你快速搭建个人博客。
 
 ## 主题配置
 
@@ -81,8 +81,9 @@ global: {
   // 字体样式
   fontStyle: 'sans' // sans, serif
   // 文章日期格式
-  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateFormat: 'YYYY-MM-DD'
   // 启用 KaTeX 数学公式渲染
   katex: true // true, false
 }
