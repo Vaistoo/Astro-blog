@@ -1,5 +1,5 @@
 ---
-title: Demonstração matemática KaTeX Mathematical
+title: Demonstração Matemática KaTeX
 published: 2025-05-01
 lang: pt
 abbrlink: katex-mathematical-demo
