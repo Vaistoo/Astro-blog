@@ -1,6 +1,6 @@
 ---
 title: Demonstração Matemática KaTeX
-published: 2025-05-01
+published: 2025-04-01
 lang: pt
 abbrlink: katex-mathematical-demo
 ---
