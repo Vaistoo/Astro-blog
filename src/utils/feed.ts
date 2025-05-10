@@ -91,7 +91,10 @@ export async function generateFeed({ lang }: GenerateFeedOptions = {}) {
       description: generateDescription(post, 'feed'),
       content: postContent,
       author: [author],
-      date: new Date(post.data.published),
+      // published -> Atom:<published>, RSS:<pubDate>
+      published: new Date(post.data.published),
+      // date -> Atom:<updated>, RSS has no update tag
+      date: post.data.updated ? new Date(post.data.updated) : new Date(post.data.published),
     })
   }
 
